@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Agregados de la primer calce de CSS-->
+    <link rel="shortcut icon" href="./Imagenes/favicon.ico"><!--Ir a favaicon.io para crear el logo de la pajina que aparese en las pestañas -->
+
+    <link rel="stylesheet" href="./ActividadesDeClaces.css"><!--Para establecer relacion entre el HTML y el CSS-->
+
+    <!--TIPOGRAFIAS WEB. En laces a google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&family=PT+Serif&display=swap" rel="stylesheet">
+    <!--Para establecer la relacion entre la pagina web de las tipografias y poder usar algo dsitinto de lo que viene por defecto-->
+
+    <title>Me precento</title>
+
+</head>
+
+<body>
+        <!--Primera calse que ralizamos actividades 09/03/2022-->
+    <p><em class="fechas">Primera actividad de clase 09/03/2022</em></p>
+
+    <header>
+        <img id="arriba" src="Imagenes/Mi foto de vacaciones.jpg" alt="Mi foto de vacaciones" width="250px">
+        <h1>Danilo Ezequiel Brena, 22 años.</h1>
+        <h3><em>Si bien no trabajo ayudo a mis padres con sus trabajos cada que me lo piden.</em></h3>
+        <a href="#listas">Ir a Listas</a><br>
+        <a href="#tablas">Ir a Tablas</a><br>
+        <a href="#links">Ir a enlaces de Links</a><br>
+        <a href="#formulario">Ir a Formularios</a><br>
+        <a href="#incluyendocss">Ir a Introduccion a Css</a><br>
+        <a href="#boxmodeling">Ir a Box Modeling</a><br>
+        <a href="#maquetadoflaxbox">Ir a Maquetado con Flexbox</a><br>
+        <a href="#grids">Ir a Grids</a><br>
+        <a href="#gridsv2">Ir a Grids V2</a><br>
+        <a href="#Animaciones">Ir a Animaciones, transformaciones y transiciones</a><br>
+        <a href="#GIT">Ir a GIT</a><br>
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <p>Busco aprender toda lo que pueda de programacion para poder vivir de esto.</p>
+            <p>Soy un buen deportista (menos en el futbol), me gusta mucho los videojuejos, el anime y manga.</p>
+            <p>Por lo general estoy disuesto a probar y a aprender cosas nuevas.</p>    
+        </section>
+        <section>
+            <h4>Es la segunda vez que reliso el curso de desarrollo web porque me atrace en la entrega de algunos materiales</h4>
+        </section>
+       
+
+        <hr>
+        <hr>
+            <!--Tercera clase que realizamos actividades 14/03/2022-->
+        <p><em class="fechas">Segunda actividad de calse 14/03/2022</em></p>
+    
+        <section id="listas">
+            <h2>Listas</h2>
+            <h3 >Mis fortalezas</h3>
+            <ul>
+                <li>Buen desportista</li>
+                <li>Paciente</li>
+                <li>Dispuesto a ayudar</li>
+                <li>Culto en cestiones de asuntos historicos</li>
+            </ul>
+
+            <h3>Como comienso el dia</h3>
+            <ol>
+                <li>Desayuno con mi madre</li>
+                <li>Llevo a mi madre al trabajo y le llevo pastillas y comida a mi abuela</li>
+                <li>Hordeno la casa</li>
+                <li>Hago las compras para la comida del dia</li>
+            </ol>
+            
+        
+        
+        </section>
+        <hr>
+
+        <section id="tablas">
+        <h2>Tablas</h2>
+        <h3>Experiencia laboral</h3>
+
+            <Table border="1" cellpadding="10px">
+                <tr>
+                    <th>Año</th>
+                    <th>Lugar</th>
+                    <th>Valoracion 1-10</th>
+                </tr>
+                <tr>
+                    <td>2019-2022</td>
+                    <td>Tane</td>
+                    <td>7.75</td>
+                </tr>
+                <tr>
+                    <td>2016-2022</td>
+                    <td>Hipocampo</td>
+                    <td>9</td>
+                </tr>
+            </Table>
+        </section>
+        <hr>
+        
+        <section id="links">
+            <h2>Enlaces de links</h2>
+            <h3>Vinculo externo</h3>
+            <a href="https://www.youtube.com">YouTube</a>
+            <p>Solo emparentar la palabra ya te envia a YouTube. Se pone de color violeta cuando uno ya vicita la pagina externa</p>
+
+            <h3>Vinculo intrinceco</h3>
+            <a href="#arriba"> Ir arriba</a>
+            <p>Para vincular es necesario que dentro de alguno de las etiquetas este la palabra ID y que halla una palabra con numeral(#) dentro de las comillas ("") y otra sin. El link que relaciona la ruta no es necesario que sea igual a los enlaces</p>
+
+            <h3>Vinculo a otra pagina web</h3>
+            <a href="./Imagenes/Archivo2.html"><h3>Ir a pagina 2</h3></a>
+            <p>Esto sirve para ir a un archivo que este dentro de mis archivos</p>
+
+        </section>
+        <hr>
+        
+        <section id="formulario">
+            <h2>Formularios</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <div>
+                        <label for="nombre">Escribe tu nombre</label>
+                        <input type="text" placeholder="Escrive tu nombre aqui" nombre="nombre">
+                    </div><br>
+                    <div>
+                        <label for="apellido">Escribe tu apellido</label>
+                        <input type="text" nombre="apellido">
+                    </div><br>
+                    <div>
+                        <label for="email">Escrube tu email *</label>
+                        <input type="email" nombre="escribe tu email" required>
+                    </div><br>
+                    <div>
+                        <label for="contraseña">Escribe tu contraseña</label>
+                        <input type="text" name="escribe tu contraseña">
+                    </div><br>
+                    <div>
+                        <label for="pais">Nacionalidad</label>
+                        <select name="pais" id="">
+                            <option value="Arg">Argentina</option>
+                            <option value="Uru">Uruguay</option>
+                            <option value="Bol">Bolivia</option>
+                            <option value="Col">Colombia</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="genero">Selecciona tu genero</label>
+                        <input type="radio" name="genero" value="hombre"> hombre
+                        <input type="radio" name="genero" value="mujer"> mujer
+                        <input type="radio" name="genero" value="no binario"> no binario
+                    </div><br>
+                    <div>
+                        <label for="Comentario">Deja tu Comentario</label><br>
+                        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Nos interesa tu comentario"></textarea>
+                    </div><br>
+                    <div> 
+                        <label for="terminos"> Acepto terminos y condiciones</label>
+                        <input type="checkbox" name="acepta" value="1">
+                    </div><br>
+                    
+                    <input type="submit" value="Enviar dato">
+                    <input type="reset" value="Borrar dato">
+
+                </fieldset>
+            </form>
+
+        </section>
+
+
+        <hr>
+        <hr>
+            <!--cuarta clase que ralizamos actividades 16/03/2022-->
+            <!--Primera vas que usamos css-->
+        <p><em class="fechas">Tercera actividad de clace 16/03/2022</em></p>
+        
+        <section id="incluyendocss">
+            <h2 >Incluyendo CSS</h2>
+            <h3 style="background-color: aqua;">Otra forma de inegrar el CSS</h3>
+            <p>Tercera opcion de enlace con CSS con un unico objetivo. <br>
+            La segunda es colocar el style="" en el head, se establecera de manera generl las indicaciones dadas
+            </p>
+
+
+            <hr>
+            <h3 class="incluido">Diferencias entre Class y Id</h3>
+            <p>estos dos metodos de enlace directo con las etiquetas tiene sus diferencias</p>
+            <p class="opcion1">El mismo Class puede ser utilizado para varias cosas</p>
+            <p class="opcion1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptas, deserunt optio iste eaque rem nihil laudantium hic animi, quaerat ex mollitia? Fugit vel sapiente molestiae minima, corrupti recusandae voluptatem.</p>
+            <p class="opcion1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium libero laboriosam enim voluptatibus ducimus vero alias fugiat, quos hic nihil expedita magni, cum incidunt debitis nesciunt accusamus neque reprehenderit!</p>
+            <p id="opcion2">Mientras que el Id no se puede, este es utilizado para una unica cosa en especifico</p>
+            <p>es recomendado usar Class en vez de id (mucha gente usa uno u otro)</p>
+
+
+            <hr>
+            <h3>Herencia</h3>
+            <p class="cascada1">La herencia o tambien cascada es el efecto que se poduce cunaod uno da 2 ordenes, la ultima sera la que sea tomada en cuenta. <br>
+            En caso de sobre escrivir un class sobre el id prevalecera el id por ser superior</p><!--Revisar en Herencia de CSS-->
+
+           
+            <hr>
+            <h3>Reset</h3>
+            <p>Desactiva el renderizado de ciertos navegadores. Eso es porque enciertos navegadores puede haver problemas con ciertos estilos que entran en conflicto con los navegadores, ya sea porque no son aplicables o se superpone, etc.</p>
+            <p>Tambien es recomendado colocar lo al principio del css.</p>
+
+
+            <hr>
+            <h3>Estilos de listas</h3>
+            <!--Resicle las listas que arme mas arriba-->
+            <ul id="ul">
+                <li>Buen desportista</li>
+                <li>Paciente</li>
+                <li>Dispuesto a ayudar</li>
+                <li>Culto en cestiones de asuntos historicos</li>
+            </ul>
+            <ol id="ol">
+                <li>Desayuno con mi madre</li>
+                <li>Llevo a mi madre al trabajo y le llevo pastillas y comida a mi abuela</li>
+                <li>Hordeno la casa</li>
+                <li>Hago las compras para la comida del dia</li>
+            </ol>
+            <p>ESto nos permite alteral lasfomas de puntuyacion de las listas</p>
+
+
+            <hr>
+            <h3>Estilo de texto</h3>
+            <h4>Font-style</h4>
+            <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat magni dolore hic nam quam accusantium porro? Saepe, omnis iusto. Dolorem eligendi vitae minus! Corrupti rerum similique ea maxime obcaecati?</p><!--Texto en italica-->
+            <h4>Font-weigt</h4>
+            <p id="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde animi accusamus ipsam placeat nihil voluptatem mollitia inventore, consequuntur impedit, quaerat ab blanditiis architecto quos natus fugit eveniet sunt temporibus.</p><!--Texto en negrita, sirve tambien para quitar la negrita de los texto que las traigan por defecto-->
+            <h4>Font-size</h4>
+            <p id="texto3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid magni vitae architecto consequuntur, esse quia veniam voluptatum harum pariatur accusamus est earum ratione, blanditiis nisi rerum. Voluptates vitae eveniet quaerat?</p><!--Sirve para agrandar los pixeles de los texos-->
+            <h4>Font-family</h4>
+            <p id="texto4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, minima consectetur, alias rem impedit soluta corrupti, ratione atque ducimus blanditiis ad voluptate eaque repellendus error earum accusantium facere sint numquam!</p><!--Puede cambiar la fuente de letra-->
+            <h4>Text-aling</h4>
+            <p id="texto5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius placeat praesentium magni odit officia ullam nihil dolorem! Sint, id ut quisquam placeat perspiciatis molestiae ad laudantium dolores debitis repellat quos.</p><!--Puede reubicar el texto-->
+            <h4>Line-height</h4>
+            <p id="texto6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi accusantium in, ea reprehenderit placeat aliquid deserunt, esse sequi recusandae eaque deleniti itaque excepturi eius? Ipsum facilis optio veniam accusantium voluptatibus.</p><!--Separa las palabras entre si-->
+            <h4>Text-decoration</h4>
+            <p id="texto7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dignissimos nostrum nihil tempora labore voluptatem architecto voluptatibus? Perspiciatis, quas. Dignissimos nemo expedita consequuntur laboriosam cumque rerum cupiditate deleniti animi eius!</p><!--sirve para decorar los textos-->
+
+
+            <hr>
+            <h3>Tipografia</h3>
+            <h4 class="grafia">Tipografia web</h4>
+            <p id="tipo">Utilizamos el google fonts para vuscar mas fuentes de letras, de las que ya vienen por defecto en el visual, es recomendable solo adquirir dos tipografias, una para titulos y otra para el resrto de la pagina</p>
+
+
+            <hr>
+            <h3>Estilo de background</h3>
+            <h4 class="color">Background-color</h4>
+            <p class="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eum nam corporis veritatis doloremque repellendus, itaque repudiandae. Neque minima totam amet ad harum sequi suscipit, nemo nam repellendus illo nobis!</p><!--Como ya emos usado antes esto solo marca el fonde de lo seleccionado del color que queramos-->
+            <h4 class="image">Background-image</h4>
+            <p class="image">Utilizas imagenes para el fondo de la etiqueta seleccionada. el enlace solo se puede ralizar desde el css. Devemos tener cuidado a la  orea de colocar una img de fondo para que sea legible el contenido. Tambien uno puede en lazar con imagenes directamente de google, es necesario colocar la direcion ip</p>
+            <h4 class="repeat">Background-repeat</h4>
+            <p class="repeat">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem nihil dolorum similique eveniet. Qui modi reiciendis, tempora sequi laboriosam ducimus minima aut saepe veritatis consectetur aspernatur sunt impedit. Aperiam, recusandae!</p><!--Puede repetir o limitar la img en siertos lugares-->
+            <h4 class="pocit">Background-pocition</h4>
+            <p class="pocit">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quia, totam quasi dignissimos dolor adipisci! Iure incidunt repudiandae eius aspernatur repellat veniam voluptatum vero nostrum quae. Vitae officia debitis nobis!</p><!--Puede repocicionar la img en lugares en especifico-->
+            <h4 class="size">Bockground-size</h4>
+            <p class="size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere omnis ab officia repellendus rerum suscipit quos dicta quam iusto. Quos totam accusantium architecto eos. Omnis sapiente suscipit nihil natus!</p><!--Aumenta o disminuye la dimencion de la img de fondo-->
+
+
+            <hr>
+            <h3>Unidades de medida</h3>
+            <h4>Absolutas</h4>
+            <p>La unidad de pixeles (px) es la media mas comun para todo. La medida predeterminada son 16px</p>
+            <h4>Relativas</h4>
+            <p id="rem">La medida Rem es la medida relativa a la configuracion establecida por el html. un rem es equivalente a 16px, devemos multipicar la medida por la cantidad de rem que elegimos</p><br>          
+            <p>La medida de porcentaje toma en cuenta el tamaño del px. 16px = 100% </p><br>
+            <p>Ejemplo con img</p><br>
+            <img id="img" src="./Imagenes/descarga.jpg" alt="samuray">
+        </section>
+
+
+        <hr>
+        <hr>
+            <!--Quinta calse que reralizamos actiidades 21/03/2022-->
+            <!--Seunda ves que usamos css-->
+        <p><em class="fechas">Cuarta actividad de clace 21/03/2022</em></p>
+
+        <section id="boxmodeling">
+            <h2>CSS + Box modeling</h2><br>
+            <img id="caja" src="./Imagenes/modelo-caja-css-t1.jpg" alt="modelo de caja css">
+            <p>Content: espacion donde se ubica el contenido (texto e img</p>
+            <p>Pading: espacio entre el contenido y el borde</p>
+            <p>Border: es el limite de la caja, si no le ponemos una medida no lo vamos a notar</p>
+            <p>Margen: limite de la caja, tiene un espacio con el border y limita con las cajas vecinas</p>
+
+            <section class="seccion1">
+                <h3>Seccion1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sapiente ipsam atque impedit nulla soluta iste ut dolore unde sed quibusdam consectetur repellendus quos, earum voluptatibus facilis voluptatum accusamus itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, dolores! Eveniet sapiente quas molestiae corporis asperiores magnam illum quisquam illo, inventore dicta soluta hic odit laboriosam sint qui repellat distinctio. lo</p>
+            </section>
+            <section class="seccion2">
+                <h3>Seccion2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ex, ipsum veritatis corporis pariatur nostrum hic veniam dolor unde eum dignissimos minus quae aliquid consequuntur facere deserunt recusandae id autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat, officiis debitis excepturi corporis voluptate eius obcaecati sunt, perferendis voluptates placeat corrupti soluta laudantium repellat tenetur magni nisi fugiat quod.</p>
+            </section>
+
+            <hr>
+            <h2>Display</h2>
+            <section class="seccion3">
+                <h3>Seccion1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sapiente ipsam atque impedit nulla soluta iste ut dolore unde sed quibusdam consectetur repellendus quos, earum voluptatibus facilis voluptatum accusamus itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, dolores! Eveniet sapiente quas molestiae corporis asperiores magnam illum quisquam illo, inventore dicta soluta hic odit laboriosam sint qui repellat distinctio. lo</p>
+            </section>
+            <section class="seccion4">
+                <h3>Seccion2</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sapiente ipsam atque impedit nulla soluta iste ut dolore unde sed quibusdam consectetur repellendus quos, earum voluptatibus facilis voluptatum accusamus itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, dolores! Eveniet sapiente quas molestiae corporis asperiores magnam illum quisquam illo, inventore dicta soluta hic odit laboriosam sint qui repellat distinctio. lo</p>
+            </section>
+            <section>
+                <img class="img1" src="./Imagenes/descarga.jpg" alt="samuray">
+                <img class="img1" src="./Imagenes/descarga.jpg" alt="samuray">
+                <img class="img1" src="./Imagenes/descarga.jpg" alt="samuray">
+                <img class="img1" src="./Imagenes/descarga.jpg" alt="samuray">
+            </section>
+            <section class="fondo">
+                <h2 class="poc">Pociocion</h2>
+                <section class="caja azul"></section>
+                <section class="caja rojo"></section>
+                <section class="caja verde"></section>
+                <section class="scroll"></section>
+            </section>
+            <ul>
+                <li>Relativ: coloca el elemento segun la conveniencia del flujo normal del documento. Este puede superponerce sbre otro elemento</li>
+                <li>Absolute: Es removido de su flujo normal, este es recomendado establecerlo dentro de un relative, sino se establecera en el top de la pagina</li>
+                <li>Fixed: es para dejar pegado un elemento deonde le es indicado y que se desplace segun el limte que se le impone.</li>
+                <li>Sticky: forma ivrida entre el relaive y el fixed, se pega sobre el borde superior.</li>
+                <li>Z-index: es para cuando dos elemtos se superpponen este los ordena.</li>            
+            </ul>
+
+            <hr>
+            <h2>Combertir una lisat en menu</h2>
+            <p>La lista del menu iria en el header dentro de un nav</p>
+            <ul class="menu">
+                <li><a href="#" target="bank">Boton 1</a></li>
+                <li><a href="#">Boton 2</a></li>
+                <li><a href="#">Boton 3</a></li>
+                <li><a href="#">Boton 4</a></li>
+            </ul>
+        </section>
+
+
+        <hr>
+        <hr>
+            <!--Sexta clace que realizamos actividades 23/03/2022-->
+            <!--Tercera clase que usamos css-->
+        <p><em class="fechas">Quinta actividad de clace 23/03/2022</em></p>
+        <h2>Maquetado con Flexbox</h2>
+        <section id="maquetadoflaxbox">
+            <div class="caja2 azul2">
+                <h2>1</h2>
+            </div>
+            <div class=" caja2 verde2">
+                <h2>2</h2>    
+            </div>
+            <div class=" caja2 rojo2">
+                <h2>3</h2>        
+            </div>
+            <div class=" caja2 amarillo2">
+                <h2>4</h2>         
+            </div>
+            <div class="caja2 fucsia2">
+                <h2>5</h2>          
+            </div>
+            <div class="caja2 gris2">
+                <h2>6</h2>
+            </div>
+            
+        </section>
+        
+        
+        <hr><hr>
+        <!--Sptima calce que realizamos actividades 28/03/2022-->
+        <!--cuarta calce que usamos css-->
+        <p><em class="fechas">Sexta actividad de clace 28/03/2022</em></p>
+        <h2>Greds</h2>
+        <section id="grids">        
+            <div class="hijo ab"><h2>A</h2></div> <!--la unificacion no permite que se vea esta area. Ya no es necesaria tenerla-->
+            <div class="hijo ab"><h2>AB</h2></div>
+            <div class="hijo c"><h2>C</h2></div>
+            <div class="hijo d"><h2>D</h2></div>
+            <div class="hijo ef"><h2>E</h2></div> <!--la unificacion no permite que se vea esta area. Ya no es necesaria tenerla-->
+            <div class="hijo ef"><h2>EF</h2></div>
+        </section>
+        
+        
+        <hr>
+        <hr>
+        <!--octava calce que realizamso actividades 30/03/2022-->
+        <!--quita calce que usamos css-->
+        <p><em class="fechas">Septima actividad de clace 30/03/2022</em></p>
+        <section id="gridsv2">
+            <h2 class="v2">Grids V2</h2>
+            <h3 class="v2">Achica la pantalla para ver el resultado</h3>
+            <p class="gri">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, porro doloremque quae quas nisi ea nam velit incidunt dolorem magnam consectetur debitis eveniet nihil aliquam modi qui aperiam delectus quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, atque blanditiis. Perferendis dolorem dolore non ipsam itaque quia, a incidunt earum libero mollitia? Iure exercitationem reiciendis amet, odit vel nesciunt.
+            Alias quod facilis reprehenderit cumque, fuga esse voluptate expedita consequatur quaerat officia accusamus similique distinctio repellat, tempora culpa, autem eum numquam totam. A quaerat voluptatem deleniti voluptas doloribus, iure laudantium.
+            Nihil enim animi odio ex ad eos amet assumenda sunt officiis aspernatur quam illo necessitatibus, adipisci dicta rem veniam laudantium exercitationem odit modi magni, dolor quaerat. Omnis magni magnam assumenda.</p>
+
+        </section>
+
+
+        <hr>
+        <hr>
+        <!--novena calse que realizamos aactividades 04/04/2022-->
+        <!--sexta calce que usamos css-->
+        <p><em class="fechas">Octava actividad de calse 04/04/2022</em></p>
+        <section id="Animaciones">
+            <h2>Animaciones, transformaciones y transiciones</h2>
+        </section>
+
+        
+        <hr>
+        <hr>
+        <!--decima calce que realizamos actividades 06/04/2022-->
+        <!--septima calse que usamos css-->
+        <p><em class="fechas">Novena actividad de calse 06/04/2022</em></p>
+        <section id="GIT">
+            <h2>GIT</h2>
+            <p>fundamental saverlo para futuros proyectos.todos los programadores deven conocelo</p>
+            <p>Existen 3 estados</p>
+        </section>
+        
+        
+        
+        <hr>
+        <hr>
+        <!--onceava calce que realizamos actividades 11/04/2022-->
+        <!--octava calse que usamos css-->
+        <p><em class="fechas">Decima actividad de clase 11/04/2022</em></p>
+        <section>
+            <h2>GITHUB</h2>
+        </section>
+
+
+
+
+
+    </main>
+    
+    
+
+</body>
+</html>
+
+

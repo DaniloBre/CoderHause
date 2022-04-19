@@ -1,0 +1,80 @@
+@media only screen and (max-width: 500px){ /*maximo de pantalla en una medida de 500px*/
+    body{
+        background-color: aquamarine;
+    }
+    h1{
+        font-size: 1.5rem;
+        color: blue;
+    }
+}
+
+@media only screen and (min-width: 500px){ /*minimo de pantalla*/
+    body{
+        background-color: violet;
+    }
+    h1{
+        font-size: 2rem;
+        color: fuchsia;
+    }
+}
+
+/*^^SI ADAPATMOS A LA PANTALLA A ESTAS MEDIDAS, ESTA SE ADAPTARA A LO INDICADO^^*/
+
+
+
+@media only screen and (min-width: 1000px){
+    body{
+        background-color: black;
+    }
+    h1{
+        color: white;
+        font-size: 3rem;
+    }
+}
+
+
+/*erramienta de la calce pasada para ejemplo con grid*/
+.contenedor{
+    background-color: white;
+    width: 90%;
+    height: 80vh;
+    border: solid black 3px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-areas: "ab ab c" "d ef ef"; 
+}
+.hijo{
+    background-color: blueviolet;
+    border: 2px solid yellow;
+}
+.ab{
+    background-color: coral;
+    grid-area: ab;
+}
+.c{
+    background-color: cornflowerblue;
+    grid-area: c;
+}
+.d{
+    background-color: rgb(67, 67, 252);
+    grid-area: d;
+}
+.ef{
+    background-color: chartreuse;
+    grid-area: ef;
+}
+
+@media only screen and (max-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ab ab"
+        "c d" 
+        "ef ef"; 
+    }
+}

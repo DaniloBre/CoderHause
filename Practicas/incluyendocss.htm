@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="inluyendocss.css"><!--Para establecer relacion entre el HTML y el CSS-->
+    <!--Tambien el href="" uno puede establecer relaciones con otras paginas que son utilizadas decorar-->
+    
+    <link rel="shortcut icon" href=""><!--De esta forma sirve para establecer el logo de la pajina que aparese en las pestañas a la izquierda-->
+    <!--Ir a favaicon.io para crear el logo de la pajina-->
+
+    <!--TIPOGRAFIAS WEB. En laces a google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&family=PT+Serif&display=swap" rel="stylesheet">
+    <!--Para establecer la relacion entre la pagina web de las tipografias y poder usar algo dsitinto de lo que viene por defecto-->
+
+    
+    <title>Incluyendo Css</title>
+
+    <style>
+        h1{
+            background-color: aqua;
+        }
+    </style>
+    <!--Esta es una segunda forma de relacionar el CSS dentro del HTML--><!--AVISO este metodo no es muy usado ya que es mas comodo tener elCSS y el HTML por serparado-->
+</head>
+<body>
+    <header>
+        <h1>Incluyendo Css</h1>
+        <br>
+        <img src="./FotosDePractica/DogeSamurai.jpg" alt="DogeSamurai">
+    </header>
+
+    <main>
+        <section>
+            <h2 style="background-color: aqua;">Formas de enlasar con CSS</h2>
+            <!--Esta es una tercera forma de establecer relacion directa con las etiquetas del HTML con el CSS--><!--AVISO misma recomendacion que  la dada con la segunda opcion-->
+
+            <p class="opcion1">Esta es una opcion de enlace directo con una etiqueta en especifoca es es la mas recomendada para establecer la relacion, ya que esta puede ser usada multiples veces.</p><br>
+
+            <p class="opcion1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum blanditiis nesciunt tempore dolor veniam voluptates necessitatibus reiciendis, ipsa rem modi alias voluptatum, culpa quaerat! Delectus aliquid exercitationem ut velit deserunt.</p><br>
+            <p class="opcion1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae saepe suscipit rerum maxime nisi ab, ipsum reprehenderit dolore quia quo id quisquam cum corrupti? Quaerat laborum pariatur sed optio voluptates?</p>
+
+            <br>
+            <p id="opcion2">Esta segunda opcion de enlace directo de ID no se puede usar multiples veces sino que sirve mas para una etiqueta en especifico.</p>
+
+        </section>
+        
+        <section>
+            <h2>Herencia/Cascada</h2>
+            <p class="herencia">EL efecto cascada o la herencia es cuando en el css damos dos ordenes a una misma etiqueta, solo la ultima orden sera ejecutada. En casod e sobreescriir sobre un id este prevalecera.</p>
+        </section>
+
+        <section>
+            <h2>Reset</h2>
+            <p>Desactiva el renderizado de ciertos navegadores. Eso es porque enciertos navegadores puede haver problemas con ciertos estilos que entran en conflicto con los navegadores, ya sea porque no son aplicables o se superpone, etc.</p>
+        </section>
+
+        <section>
+            <h2>Estilo de listas</h2>
+            <ul id="ul">
+                <li>Buen desportista</li>
+                <li>Paciente</li>
+                <li>Dispuesto a ayudar</li>
+                <li>Culto en cestiones de asuntos historicos</li>
+            </ul>
+
+            <ol id="ol">
+                <li>Desayuno con mi madre</li>
+                <li>Llevo a mi madre al trabajo y le llevo pastillas y comida a mi abuela</li>
+                <li>Hordeno la casa</li>
+                <li>Hago las compras para la comida del dia</li>
+            </ol>
+
+            <p>ESto nos permite alteral lasfomas de puntuyacion de las listas</p>
+        </section>
+
+        <section>
+            <h2>Estilo de texto</h2>
+            <h3>Font-style</h3>
+            <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat magni dolore hic nam quam accusantium porro? Saepe, omnis iusto. Dolorem eligendi vitae minus! Corrupti rerum similique ea maxime obcaecati?</p><!--Texto en italica-->
+            <h3>Font-weigt</h3>
+            <p id="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde animi accusamus ipsam placeat nihil voluptatem mollitia inventore, consequuntur impedit, quaerat ab blanditiis architecto quos natus fugit eveniet sunt temporibus.</p><!--Texto en negrita, sirve tambien para quitar la negrita de los texto que las traigan por defecto-->
+            <h3>Font-size</h3>
+            <p id="texto3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid magni vitae architecto consequuntur, esse quia veniam voluptatum harum pariatur accusamus est earum ratione, blanditiis nisi rerum. Voluptates vitae eveniet quaerat?</p><!--Sirve para agrandar los pixeles de los texos-->
+            <h3>Font-family</h3>
+            <p id="texto4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, minima consectetur, alias rem impedit soluta corrupti, ratione atque ducimus blanditiis ad voluptate eaque repellendus error earum accusantium facere sint numquam!</p><!--Puede cambiar la fuente de letra-->
+            <h3>Text-aling</h3>
+            <p id="texto5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius placeat praesentium magni odit officia ullam nihil dolorem! Sint, id ut quisquam placeat perspiciatis molestiae ad laudantium dolores debitis repellat quos.</p><!--Puede reubicar el texto-->
+            <h3>Line-height</h3>
+            <p id="texto6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi accusantium in, ea reprehenderit placeat aliquid deserunt, esse sequi recusandae eaque deleniti itaque excepturi eius? Ipsum facilis optio veniam accusantium voluptatibus.</p><!--Separa las palabras entre si-->
+            <h3>Text-decoration</h3>
+            <p id="texto7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dignissimos nostrum nihil tempora labore voluptatem architecto voluptatibus? Perspiciatis, quas. Dignissimos nemo expedita consequuntur laboriosam cumque rerum cupiditate deleniti animi eius!</p><!--sirve para decorar los textos-->
+        </section>
+
+        <section>
+            <h2 class="grafia">Tipografia</h2>
+            <p id="tipo">Utilizamos el google fonts para vuscar mas fuentes de letras, de las que ya vienen por defecto en el visual, es recomendable solo adquirir dos tipografias, una para titulos y otra para el resrto de la pagina</p>
+        </section>
+
+        <section>
+            <h2>Background</h2>
+            <h3 class="color">Background-color</h3>
+            <p class="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eum nam corporis veritatis doloremque repellendus, itaque repudiandae. Neque minima totam amet ad harum sequi suscipit, nemo nam repellendus illo nobis!</p><!--Como ya emos usado antes esto solo marca el fonde de lo seleccionado del color que queramos-->
+            <h3 class="image">Background-image</h3>
+            <p class="image">Utilizas imagenes para el fondo de la etiqueta seleccionada. el enlace solo se puede ralizar desde el css. Devemos tener cuidado a la  orea de colocar una img de fondo para que sea legible el contenido. Tambien uno puede en lazar con imagenes directamente de google, es necesario colocar la direcion ip</p>
+            <h3 class="repeat">Background-repeat</h3>
+            <p class="repeat">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem nihil dolorum similique eveniet. Qui modi reiciendis, tempora sequi laboriosam ducimus minima aut saepe veritatis consectetur aspernatur sunt impedit. Aperiam, recusandae!</p><!--Puede repetir o limitar la img en siertos lugares-->
+            <h3 class="pocit">Background-pocition</h3>
+            <p class="pocit">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quia, totam quasi dignissimos dolor adipisci! Iure incidunt repudiandae eius aspernatur repellat veniam voluptatum vero nostrum quae. Vitae officia debitis nobis!</p><!--Puede repocicionar la img en lugares en especifico-->
+            <h3 class="size">Bockground-size</h3>
+            <p class="size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere omnis ab officia repellendus rerum suscipit quos dicta quam iusto. Quos totam accusantium architecto eos. Omnis sapiente suscipit nihil natus!</p><!--Aumenta o disminuye la dimencion de la img de fondo-->
+        </section>
+
+        <section>
+            <h2>Unidades de medida</h2>
+            <h3>Absolutas</h3>
+            <p>La unidad de pixeles (px) es la media mas comun para todo. La medida predeterminada son 16px</p>
+            <h3>Relativas</h3>
+            <p id="rem">La medida Rem es la medida relativa a la configuracion establecida por el html. un rem es equivalente a 16px, devemos multipicar la medida por la cantidad de rem que elegimos</p><br>          
+            <p>La medida de porcentaje toma en cuenta el tamaño del px. 16px = 100% </p><br>
+            <p>Ejemplo con img</p><br>
+            <img id="img" src="./FotosDePractica/descarga.jpg" alt="samuray">
+        </section>
+
+    </main>
+
+
+</body>
+</html>

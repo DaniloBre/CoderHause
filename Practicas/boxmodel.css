@@ -1,0 +1,96 @@
+/*Box modeling*/
+#boxmodeling{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*Menu*/
+.menu{
+    list-style-type: none;
+    margin: 10px;
+    background-color: blueviolet;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    background-color: chartreuse;
+    padding: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: darkgreen;
+    border-radius: 20%;
+}
+.menu li a:hover{
+    color: wheat;
+}
+/*Fin menu*/
+
+.seccion1{
+    background-color: aquamarine;
+    width: 300px;
+    height: 200px;
+    margin: 1rem;
+    padding: 10px;
+    overflow: auto;
+    border: red 
+        5px 
+        dotted;
+    border-radius: 5%;
+}
+.seccion2{
+    background-color: coral;
+    width: 300px;
+    height: 200px;
+    margin: 1rem;
+    padding: 10px;
+    overflow: auto;
+    border-top: green 
+        3px 
+        dashed;
+        border-right: yellow
+        4px
+        solid;
+    border-bottom: purple 
+        5px
+        dotted;
+    border-left: blue 
+        6px
+        double;
+}
+img{
+    margin: 23px;
+    display: block;
+}
+/*Fin box modeling*/
+
+/*Caja*/
+.fondo{
+    background-color: black;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+.azul{
+    background-color: blue;
+    position: relative;
+    top: 40px;
+    left: 40px;  
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: green;
+}
+.scroll{
+    width: 100px;
+    height: 200px;
+}
+/*Fin caja*/

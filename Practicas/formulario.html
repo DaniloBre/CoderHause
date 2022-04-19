@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <main>
+        <h1>Formularios</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <div>
+                        <label for="nombre">Escribe tu nombre</label>
+                        <input type="text" placeholder="Escrive tu nombre aqui" nombre="nombre">
+                    </div><br>
+                    <div>
+                        <label for="apellido">Escribe tu apellido</label>
+                        <input type="text" nombre="apellido">
+                    </div><br>
+                    <div>
+                        <label for="email">Escrube tu email *</label>
+                        <input type="email" nombre="escribe tu email" required>
+                    </div><br>
+                    <div>
+                        <label for="contraseña">Escribe tu contraseña</label>
+                        <input type="text" name="escribe tu contraseña">
+                    </div><br>
+                    <div>
+                        <label for="pais">Nacionalidad</label>
+                        <select name="pais" id="">
+                            <option value="Arg">Argentina</option>
+                            <option value="Uru">Uruguay</option>
+                            <option value="Bol">Bolivia</option>
+                            <option value="Col">Colombia</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="genero">Selecciona tu genero</label>
+                        <input type="radio" name="genero" value="hombre"> hombre
+                        <input type="radio" name="genero" value="mujer"> mujer
+                        <input type="radio" name="genero" value="no binario"> no binario
+                    </div><br>
+                    <div>
+                        <label for="Comentario">Deja tu Comentario</label><br>
+                        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Nos interesa tu comentario"></textarea>
+                    </div><br>
+                    <div> <label for="terminos"> Acepto terminos y condiciones</label></div>
+                    <input type="checkbox" name="acepta" value="1">
+                    <br>
+                    
+                    <input type="submit" value="Enviar dato">
+                    <input type="reset" value="Borrar dato">
+
+                </fieldset>
+            </form>
+    </main>
+
+</body>
+</html>

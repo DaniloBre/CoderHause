@@ -1,0 +1,127 @@
+body{
+    background-color: aquamarine;
+}
+
+h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.contenedor{
+    background-color: white;
+    width: 90%;
+    height: 80vh;
+    border: solid black 3px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr; /*le damos el tamaño y cantidad de columnas*/
+    grid-template-rows: repeat(2, 1fr); /*cantidad de veces que se repita la columna*/
+    gap: 10px; /*se establece distancia entre las areas*/
+    grid-template-areas: "ab ab c" "d ef ef"; /*podemos unificar areas*/
+}
+.hijo{
+    background-color: blueviolet;
+    border: 2px solid yellow;
+}
+.ab{
+    background-color: coral;
+    grid-area: ab; /*la unificacion del area establecida en el "grid-template-areas" se terminan de unificar con este tipo de comandos*/
+}
+.c{
+    background-color: cornflowerblue;
+    grid-area: c;
+}
+.d{
+    background-color: rgb(67, 67, 252);
+    grid-area: d;
+}
+.ef{
+    background-color: chartreuse;
+    grid-area: ef;
+}
+
+/*REVISAR EL WORD DE LA CALCE PARA VER LAS DISTINTAS POCICIONES QUE SE LE PUEDEN DARF A LOS ELEMENTOS DEL GRID*/
+
+
+
+
+/*DESAFIO*/
+.conteiner{
+    width: 90%;
+    height: 80vh;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "prod extras aside"
+    "footer footer footer";
+    gap: 10px;
+}
+
+.header{
+    background-color: blue;
+    grid-area: header;
+}
+.prod{
+    background-color: brown;
+    grid-area: prod;
+}
+.extras{
+    background-color: gray;
+    grid-area: extras;
+}
+.aside{
+    background-color: red;
+    grid-area: aside;
+}
+.footer{
+    background-color: green;
+    grid-area: footer;
+}
+
+/*FIN DE DESAFIO*/
+
+
+/*EJEMPLO 2*/
+.ejem2{
+    text-align: center;
+    display: grid;
+    width: 900px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-areas: 
+    "hed2 hed2 hed2"
+    "celeste celeste aside"
+    "rosa rosa aside"
+    "morado morado aside"
+    "footer footer aside";
+}
+.hed2{
+    background-color: white;
+    grid-area: hed2;
+}
+.celeste{
+    background-color: cadetblue;
+    grid-area: celeste;
+}
+.rosa{
+    background-color: pink;
+    grid-area: rosa;
+}
+.morado{
+    background-color: purple;
+    grid-area: morado;
+}
+aside{
+    background-color: darkslategray;
+    grid-area: aside;
+}
+footer{
+    background-color: darkolivegreen;
+    grid-area: footer;
+}
+/*FIN DE EJEMPLO 2*/
+

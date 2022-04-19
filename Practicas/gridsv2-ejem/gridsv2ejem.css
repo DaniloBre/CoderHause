@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "logo nav nav nav"
+    "producto producto servicio servicio"
+    "footer footer footer footer"
+    ;
+    gap: 10px;
+}
+.logo, .nav, .footer{
+    color: wheat;
+    background-color:chocolate;
+    text-align: center;
+    height: 50px;
+    border-radius: 3px;
+}
+.logo{
+    grid-area: logo;
+}
+.nav{
+    grid-area: nav;
+}
+.productos, .servicios{
+    background-color: rgb(83, 117, 117);
+    border-radius: 5px;
+    padding: 1rem;
+}
+.productos{
+    grid-area: producto;
+}
+.servicios{
+    grid-area: servicio;
+}
+.footer{
+    grid-area: footer;
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-areas:
+        "logo nav nav nav"
+        "producto producto producto producto"
+        "servicio servicio servicio servicio"
+        "footer footer footer footer";
+        background-color: darkgreen;
+    }
+    h1{
+        font-size: 1.8rem;
+        color: brown;
+    }
+    h2{
+        font-size: 1.2rem;
+        color: forestgreen;
+    }
+}

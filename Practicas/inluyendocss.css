@@ -1,0 +1,100 @@
+/*RESET. Esto es para resetar el codigo de los margenes y el pading de los navegadores y acoplarlos a nuesto programa*/
+*{
+    margin: 5px;
+    padding: 5px;
+}
+/*FIN DEL RESET*/
+/*Es copnveniete colocar este reset al inicio de los CSS*/
+
+h1{
+    color: darkred;
+}
+.opcion1{
+    background-color: darkolivegreen;
+}
+
+#opcion2{
+    background-color: brown;
+}
+
+/*Herencia*/
+.herencia{
+    background-color: darkmagenta;
+}
+.herencia{
+    background-color: coral;
+}
+/*Fin de herencia*/
+
+/*Listas*/
+#ul{
+    list-style: circle;
+}
+#ol{
+    list-style: decimal;
+}
+/*Fin de listas*/
+
+/*Texto*/
+#texto1{
+    font-style: italic;
+}
+#texto2{
+    font-weight: bold;
+}
+#texto3{
+    font-size: 20px;
+}
+#texto4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#texto5{
+    text-align: center;
+}
+#texto6{
+    line-height: 2.5;
+}
+#texto7{
+    text-decoration: line-through;
+}
+/*Fin de texto*/
+
+/*Tipografia*/
+.grafia{
+    font-family: 'PT Serif', serif;
+}
+#tipo{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+/*Fin tipografia*/
+
+/*Background*/
+.color{
+    background-color: firebrick;
+}
+.image{
+    background-image: url(./FotosDePractica/Fondojpg.jpg);
+}
+.repeat{
+    background-image: url(./FotosDePractica/Fondojpg.jpg);
+    background-repeat: repeat-y;
+}
+.pocit{
+    background-image: url(./FotosDePractica/Fondojpg.jpg);
+    background-position: center;
+}
+.size{
+    background-image: url(./FotosDePractica/Fondojpg.jpg);
+    background-size: cover;
+}
+/*Fin background*/
+
+/*Medidas*/
+#rem{
+    font-size: 2rem;/*equivalente a 32px*/
+}
+#img{
+    width: 50% /*deesta manera la img ocupa el porcentaje del la pantalla*/
+}
+/*Fin medidas*/
